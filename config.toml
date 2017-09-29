@@ -1,0 +1,24 @@
+baseURL = "https://of-mu.org/"
+languageCode = "en-us"
+title = "Of Mu"
+theme="hugo-theme-nix"
+
+[params]
+  GithubID = "overlordofmu"
+  TwitterID = "overlordofmu"
+  LinkedInID = "lawsonluke"
+  GoogleplusID = "+LukeLawson-mu"
+  Name = "Luke Lawson"
+  HeaderUsername = "overlord"
+  HeaderHostname = "of-mu.org"
+  Email = "overlord@of-mu.org"
+  About = "Luke is an autodidactic polymath with a passion for IT systems. He is always looking for new challenges and enjoys evolving to meet new requirements."
+  ProfilePicture = "https://secure.gravatar.com/avatar/846df77718ea4c734b1b4f727fdde7f1?s=640"
+  SlackURL = "https://of-mu.slack.com/team/U7A9RHKK7"
+  #  GoogleAnalytics = "your_google_analytics_id"
+[menu]
+  [[menu.header]]
+    name = "posts"
+    weight = 0
+    url = "/posts"
+
