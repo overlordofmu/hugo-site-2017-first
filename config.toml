@@ -13,7 +13,7 @@ theme="hugo-theme-nix"
   HeaderHostname = "of-mu.org"
   Email = "overlord@of-mu.org"
   About = "Luke is an autodidactic polymath with a passion for information systems. He finds new challenges invigorating and loves evolving to meet dynamic requirements."
-  ProfilePicture = "https://secure.gravatar.com/avatar/846df77718ea4c734b1b4f727fdde7f1?s=640"
+  ProfilePicture = "luke.png"
   SlackURL = "https://of-mu.slack.com/team/U7A9RHKK7"
   #  GoogleAnalytics = "your_google_analytics_id"
 [menu]
