@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://of-mu.org/posts/2017-10-14/</loc>
+    <lastmod>2017-10-14T05:02:32-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://of-mu.org/posts/2017-09-29/</loc>
     <lastmod>2017-09-29T02:45:00-07:00</lastmod>
   </url>
@@ -14,13 +19,13 @@
   
   <url>
     <loc>https://of-mu.org/</loc>
-    <lastmod>2017-09-29T02:45:00-07:00</lastmod>
+    <lastmod>2017-10-14T05:02:32-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://of-mu.org/posts/</loc>
-    <lastmod>2017-09-29T02:45:00-07:00</lastmod>
+    <lastmod>2017-10-14T05:02:32-07:00</lastmod>
     <priority>0</priority>
   </url>
   

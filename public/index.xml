@@ -6,10 +6,23 @@
     <description>Recent content on Of Mu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Sep 2017 02:45:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 14 Oct 2017 05:02:32 -0700</lastBuildDate>
     
 	<atom:link href="https://of-mu.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2017 10 14</title>
+      <link>https://of-mu.org/posts/2017-10-14/</link>
+      <pubDate>Sat, 14 Oct 2017 05:02:32 -0700</pubDate>
+      
+      <guid>https://of-mu.org/posts/2017-10-14/</guid>
+      <description>The TLS/SSL Config for Of-Mu.org Using Let&amp;rsquo;s Encrypt Description This is a guide about how I setup and maintain the TLS/SSL certificates for this website, of-mu.org.
+As of 2017-10-14 05:18:35 PST/PDT this site was getting an A+ rating from SSL Labs using the configuration shown here.
+You can rerun your own SSL Labs test on this site using the link below:
+https://www.ssllabs.com/ssltest/analyze.html?d=of-mu.org
+Here is my screenshot of boastful joy:</description>
+    </item>
     
     <item>
       <title>2017 09 29</title>

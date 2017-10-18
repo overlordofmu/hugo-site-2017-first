@@ -1,7 +1,7 @@
 #!/bin/sh
 
-hugo_staging=/home/sandbox1/public
-nginx_live=/home/nginx/public
+hugo_staging=/home/hugo-sandbox/public
+nginx_live=/var/of-mu.org/public
 
 ##unlock the files/directories
 echo unlocking files/directories here: "$nginx_live"
