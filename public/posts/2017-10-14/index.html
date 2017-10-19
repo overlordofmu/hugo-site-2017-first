@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title> 2017 10 14 &middot; Of Mu </title>
+        <title> Nginx, TLS, and Let&#39;s Encrypt &middot; Of Mu </title>
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -64,14 +64,14 @@
 </header>
 
         <div class="container wrapper">
-            <h1><a href="https://of-mu.org/posts/2017-10-14/">2017 10 14</a></h1>
+            <h1><a href="https://of-mu.org/posts/2017-10-14/">Nginx, TLS, and Let&#39;s Encrypt</a></h1>
             <span class="post-date">Oct 14, 2017 </span>
             <div class="post-content">
                 
 
 <h2 id="the-tls-ssl-config-for-of-mu-org-using-let-s-encrypt">The TLS/SSL Config for Of-Mu.org Using Let&rsquo;s Encrypt</h2>
 
-<h4 id="description">Description</h4>
+<h3 id="description">Description</h3>
 
 <p>This is a guide about how I setup and maintain the TLS/SSL certificates for this website, <strong>of-mu.org</strong>.</p>
 
@@ -83,11 +83,21 @@
 
 <p>Here is my screenshot of boastful joy:</p>
 
-<p><img src="/ssl-labs-screenshot-2017-10-14.png" alt="ssl-labs-screenshot-2017-10-14.png" /></p>
 
-<p>This is what I do instead of football (and, yes, I know people call it soccer here).</p>
+<figure class="img-responsive">
+    
+        <img src="/posts/ssl-labs-screenshot-2017-10-14.png" alt="Nerd Pride!" />
+    
+    
+    <figcaption>
+        <h4>This is what I do instead of football (and, yes, I know people call it soccer here).</h4>
+        
+    </figcaption>
+    
+</figure>
 
-<h4 id="references-attributions-and-thanks">References, Attributions, and Thanks</h4>
+
+<h3 id="references-attributions-and-thanks">References, Attributions, and Thanks</h3>
 
 <p>So, how did I do this?  Basically, I followed this guide on the Arch Linux wiki:</p>
 
@@ -99,7 +109,7 @@
 
 <p>Thanks to all of you for your fine and noble work.</p>
 
-<h4 id="the-instructions-or-show-me-already">The Instructions (or Show Me Already)</h4>
+<h3 id="the-instructions-or-show-me-already">The Instructions (or Show Me Already)</h3>
 
 <p>This is Arch Linux, therefore I installed <code>certbot</code> like so:</p>
 
@@ -145,7 +155,7 @@ certbot --manual
 
 <p>After successful answering all challenge/responses  <code>certbot</code> will download your new TLS/SSL certificates to local files!</p>
 
-<h4 id="tls-ssl-cert-auto-updates">TLS/SSL Cert Auto-updates</h4>
+<h3 id="tls-ssl-cert-auto-updates">TLS/SSL Cert Auto-updates</h3>
 
 <p>Now, these certificates expire in 90 days. This is wonderful for two reasons - first, it keeps you updating your keys making any comprised keys expire sooner than if you had year long keys. Second, it requires that we constantly return to our security configurations. Security has never been and will never be: &ldquo;set it and forget it&rdquo;. Such thinking is, to me at least, the antithesis of security. If you are not checking, probing, and documenting the efforts to circumvent your security, let&rsquo;s be honest - do you really know for certain that you are secure? If one had security issues, how does one know (either way) without checking?</p>
 
@@ -198,7 +208,7 @@ Mon 2017-10-16 01:41:49 PDT  21h left Sun 2017-10-15 01:19:21 PDT  2h 44min ago 
 
 <p>Yup, it&rsquo;s running! :)</p>
 
-<h4 id="configuring-nginx-and-best-practices">Configuring Nginx and Best Practices</h4>
+<h3 id="configuring-nginx-and-best-practices">Configuring Nginx and Best Practices</h3>
 
 <p>Now, as an individual human-being (I am still human and there is still only one of me, right?) with many responsibilities, it is difficult to stay up to date on all the best cryptography practices. It can be very helpful to have resources to assist with something like this and one which I have found incredibly effective is located here:</p>
 
@@ -206,7 +216,7 @@ Mon 2017-10-16 01:41:49 PDT  21h left Sun 2017-10-15 01:19:21 PDT  2h 44min ago 
 
 <p>Those wizards over at Mozilla are giving away the magic for free again! What ever will they do next? (Hint: probably keep giving away cool things for free).</p>
 
-<h5 id="generic-tls-ssl-recommendations-from-the-site-above">Generic TLS/SSL Recommendations from the Site Above</h5>
+<h4 id="generic-tls-ssl-recommendations-from-the-site-above">Generic TLS/SSL Recommendations from the Site Above</h4>
 
 <p>When I told the site above my version of <code>nginx</code> and <code>openssl</code> it recommended the following configuration:</p>
 
@@ -250,7 +260,7 @@ server {
  }
 </code></pre>
 
-<h5 id="specific-examples-for-of-mu-org">Specific Examples for Of-Mu.org</h5>
+<h4 id="specific-examples-for-of-mu-org">Specific Examples for Of-Mu.org</h4>
 
 <p>The following is an example of how the <code>nginx</code> <strong>server</strong> block appear is/was configured for this site (<strong>of-mu.org</strong> at the time the test was run):</p>
 
