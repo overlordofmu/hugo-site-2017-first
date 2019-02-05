@@ -2,7 +2,7 @@
   HUGO_VERSION = "0.23"
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.208"
+  HUGO_VERSION = "0.20"
 
 # Specific branch context: all deploys from this specific branch will inherit
 # these settings.
