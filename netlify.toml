@@ -1,0 +1,11 @@
+[context.production.environment]
+  HUGO_VERSION = "0.19"
+
+[context.branch-deploy.environment]
+  HUGO_VERSION = "0.18"
+
+# Specific branch context: all deploys from this specific branch will inherit
+# these settings.
+[context.staging] # 'staging' is a branch name
+  command = "echo 'staging'"
+  base = "staging"
