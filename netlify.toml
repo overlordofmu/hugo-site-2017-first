@@ -1,8 +1,8 @@
 [context.production.environment]
-  HUGO_VERSION = "0.19"
+  HUGO_VERSION = "0.23"
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.18"
+  HUGO_VERSION = "0.208"
 
 # Specific branch context: all deploys from this specific branch will inherit
 # these settings.
@@ -11,4 +11,3 @@
   base = "staging"
 
 ## A comment to trigger a deploy
-
