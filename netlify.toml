@@ -1,6 +1,6 @@
 [build]
-  command = "env ; hugo"
-  HUGO_VERSION = "0.20"
+  command = "hugo"
+  HUGO_VERSION = "0.42"
 
 [context.deploy-preview]
-  command = "hugo"
+  command = "env; hugo ; sleep 20"
