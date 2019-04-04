@@ -1,2 +1,3 @@
-/netlify/* https://www.google.com/search?q=:splat 200
-
+/netlify/* https://www.google.com/search?q=:splat 301!
+https://mufu.io/* https://www.of-mu.org/:splat 301!
+https://pedantic-spence-8a7da3.netlify.com/* https://www.of-mu.org/:splat 301!
