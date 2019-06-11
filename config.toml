@@ -1,4 +1,4 @@
-baseURL = "https://www.of-mu.org/"
+baseURL = "https://of-mu.org/"
 languageCode = "en-us"
 title = "Of Mu"
 theme="hugo-theme-nix"
