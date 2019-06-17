@@ -1,5 +1,5 @@
 [build]
-#  command = "hugo"
+command = "env ; hugo  || { sleep 120 ; false ; } "
 
 [build.environment]
   HUGO_VERSION = "0.53"
