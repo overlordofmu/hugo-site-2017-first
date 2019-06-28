@@ -1,8 +1,8 @@
 [build]
-command = "env ; hugo  ; sleep 120 "
+command = "free -h ; env ; hugo  || { sleep 120; false; }"
 
 [build.environment]
   HUGO_VERSION = "0.53"
 
 [context.deploy-preview]
-  command = "env ; hugo  || { sleep 120 ; false ; } "
+  command = "free -h ; env ; hugo  || { sleep 120 ; false ; } "
