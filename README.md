@@ -1,4 +1,4 @@
-# hugo-site-2017-first
+# hugo-of-mu.org
 
 ## Purpose
 
