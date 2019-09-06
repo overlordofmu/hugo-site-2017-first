@@ -1,8 +1,5 @@
 [build]
-command = "hugo version ; free -h ; env ;\
-           echo -n 'The shell is' ; echo $0 ;\
-           xargs --show-limits ; hugo  || { sleep 120; false; } ;\
-           sleep 600 "
+command = "hugo version ; free -h ; env ; echo -n 'The shell is' ; echo $0 ; xargs --show-limits ; hugo  || { sleep 120; false; } ; sleep 600"
 
 [build.environment]
 #  HUGO_VERSION = "0.56.3"
@@ -11,11 +8,4 @@ command = "hugo version ; free -h ; env ;\
   command = "free -h ; env ; hugo  || { sleep 120 ; false ; } "
 
 
-#comments still trigger builds :)
-#comments still trigger builds :)
-#comments still trigger builds :)
-#comments still trigger builds :)
-#comments still trigger builds :)
-#comments still trigger builds :)
-#comments still trigger builds :)
 #comments still trigger builds :)
