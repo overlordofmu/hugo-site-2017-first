@@ -1,6 +1,8 @@
 [build]
-  command = "env ; hugo"
+  command = "env ; hugo || { sleep 120; false; } ; sleep 600 "
   HUGO_VERSION = "0.20"
 
 [context.deploy-preview]
   command = "hugo"
+
+#comments still trigger builds :)
