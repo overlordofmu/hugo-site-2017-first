@@ -10,3 +10,4 @@ command = "hugo version ; free -h ; env ; echo -n 'The shell is' ; echo $0 ; xar
 
 #comments still trigger builds :)
 #comments still trigger builds :)
+#comments still trigger builds :)
