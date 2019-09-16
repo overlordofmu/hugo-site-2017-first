@@ -2,4 +2,4 @@
 https://mufu.io/* https://of-mu.org/:splat 301!
 https://of-mu.netlify.com/* https://of-mu.org/:splat 301!
 http://www.of-mu.org/ https://of-mu.org/ 301!
-#/ /posts/2017-10-14/ 200!
+/test/ /posts/2017-10-14/ 200!
