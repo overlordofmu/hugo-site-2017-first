@@ -1,0 +1,15 @@
+build:
+  publish: publish
+  # inline lifecycle hooks
+  lifecycle:
+    init:
+      - echo "Starting the build"
+      - echo "Okay - really starting the build now"
+    build:
+      - echo "Okay -really, really starting the now"
+      - env
+      - xargs --show-limits
+      - free -h
+      - hugo
+    finally: echo "Ending the build"
+
