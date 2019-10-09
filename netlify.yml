@@ -8,8 +8,6 @@ build:
     build:
       - echo "Okay -really, really starting the now"
       - env
-      - xargs --show-limits
-      - free -h
       - hugo
     finally: echo "Ending the build"
 
