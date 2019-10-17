@@ -7,7 +7,10 @@ build:
       - echo "Okay - really starting the build now"
     build:
       - echo "Okay -really, really starting the now"
+      - echo "Output from `env` : "
       - env
+      - echo "Output from `node -p "process.env" -` : "
+      - node -p "process.env" -
       - hugo
     finally: echo "Ending the build"
 
