@@ -4,6 +4,8 @@ build:
   lifecycle:
     init:
       - echo lifecycle stage is 'init'
+      - echo this is the "slash/in/name/branch"
+      - echo this is the \"slash/in/name/branch\" (quoted)
     pregetCache:
       - echo lifecycle stage is 'pregetCache'
     getCache:
