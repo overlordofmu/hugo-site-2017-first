@@ -3,14 +3,65 @@ build:
   # inline lifecycle hooks
   lifecycle:
     init:
-      - echo "Starting the build"
-      - echo "Okay - really starting the build now"
+      - echo lifecycle stage is 'init'
+    pregetCache:
+      - echo lifecycle stage is 'pregetCache'
+    getCache:
+      - echo lifecycle stage is 'getCache'
+    postgetCache:
+      - echo lifecycle stage is 'postgetCache'
+    preinstall:
+      - echo lifecycle stage is 'preinstall'
+    install:
+      - echo lifecycle stage is 'install'
+    postinstall:
+      - echo lifecycle stage is 'postinstall'
+    prebuild:
+      - echo lifecycle stage is 'prebuild'
     build:
-      - echo "Okay -really, really starting the now"
-      - echo "Output from `env`."
+      - echo lifecycle stage is 'build'
       - env
-      - 'echo "Output from `node -p "process.env" -` : "'
       - node -p "process.env" -
       - hugo
-    finally: echo "Ending the build"
-
+    postbuild:
+      - echo lifecycle stage is 'postbuild'
+    prebuildSite:
+      - echo lifecycle stage is 'prebuildSite'
+    buildSite:
+      - echo lifecycle stage is 'buildSite'
+    postbuildSite:
+      - echo lifecycle stage is 'postbuildSite'
+    prebuildFunctions:
+      - echo lifecycle stage is 'prebuildFunctions'
+    buildFunctions:
+      - echo lifecycle stage is 'buildFunctions'
+    postbuildFunctions:
+      - echo lifecycle stage is 'postbuildFunctions'
+    prepackage:
+      - echo lifecycle stage is 'prepackage'
+    package:
+      - echo lifecycle stage is 'package'
+    postpackage:
+      - echo lifecycle stage is 'postpackage'
+    predeploy:
+      - echo lifecycle stage is 'predeploy'
+    deploy:
+      - echo lifecycle stage is 'deploy'
+    postdeploy:
+      - echo lifecycle stage is 'postdeploy'
+    presaveCache:
+      - echo lifecycle stage is 'presaveCache'
+    saveCache:
+      - echo lifecycle stage is 'saveCache'
+    postsaveCache:
+      - echo lifecycle stage is 'postsaveCache'
+    premanifest:
+      - echo lifecycle stage is 'premanifest'
+    manifest:
+      - echo lifecycle stage is 'manifest'
+    postmanifest:
+      - echo lifecycle stage is 'postmanifest'
+    finally:
+      - echo lifecycle stage is 'finally'
+    onError:
+      - echo lifecycle stage is 'onError'
