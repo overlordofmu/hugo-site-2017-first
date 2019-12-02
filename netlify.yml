@@ -19,11 +19,10 @@ build:
     prebuild:
       - echo lifecycle stage is 'prebuild'
     build:
-      - echo lifecycle stage is 'build'
+      - echo lifecycle stage is 'build' ; ls -alh
       - env
       - node -p "process.env" -
       - hugo
-      - ls -lAh
     postbuild:
       - echo lifecycle stage is 'postbuild'
     prebuildSite:
