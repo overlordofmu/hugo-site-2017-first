@@ -23,6 +23,7 @@ build:
       - env
       - node -p "process.env" -
       - hugo
+      - ls -lAh
     postbuild:
       - echo lifecycle stage is 'postbuild'
     prebuildSite:
