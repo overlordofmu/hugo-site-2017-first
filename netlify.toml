@@ -1,5 +1,5 @@
 [build]
-command = "env ; hugo"
+command = "ls -alh ; env ; hugo"
 
 [build.environment]
 #  HUGO_VERSION = "0.56.3"
