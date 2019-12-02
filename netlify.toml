@@ -5,7 +5,7 @@ command = "env ; hugo"
 #  HUGO_VERSION = "0.56.3"
 
 [context.deploy-preview]
-  command = "free -h ; env ; hugo  || { sleep 120 ; false ; } "
+  command = "ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } "
 
 
 #comments still trigger builds :)
