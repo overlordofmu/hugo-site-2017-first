@@ -1,12 +1,14 @@
 [build]
-command = "if [ ! -d ../cache/testing  ] ; then mkdir ../cache/testing ; fi ; cp -R ../cache/testing . ; pwd ; ls -alh ; ls -alh .. ; ls -alh ../cache ; date >> testing/date.txt ; cat ./testing/date.txt ;  env ; hugo ; echo ./testing/date.txt ; cp -R testing ../cache/"
 
-ignore = "git diff --quiet HEAD^ HEAD public/"
+  command = "if [ ! -d ../cache/testing  ] ; then mkdir ../cache/testing ; fi ; cp -R ../cache/testing . ; pwd ; ls -alh ; ls -alh .. ; ls -alh ../cache ; date >> testing/date.txt ;  env ; hugo ; cat ./testing/date.txt ; cp -R testing ../cache/"
+
+  ignore = "git diff --quiet HEAD^ HEAD static/"
 
 [build.environment]
 #  HUGO_VERSION = "0.56.3"
 
 [context.deploy-preview]
+
   command = "ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } "
 
 
