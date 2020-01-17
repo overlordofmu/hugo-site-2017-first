@@ -1,5 +1,5 @@
 [build]
-command = "pwd ; echo \"$(date)\" >> ../cache/testing/date.txt ; ls -alh; ls -alh .. ; ls -alh ../cache ; mkdir ../cache/testing ; cat ./testing/date.txt ; env ; hugo"
+command = "if [ ! -d ../cache/testing  ] ; then mkdir ../cache/testing ; fi ; cp -R ../cache/testing . ; pwd ; ls -alh ; ls -alh .. ; ls -alh ../cache ; date >> testing/date.txt ; cat ./testing/date.txt ;  env ; hugo ; cp -R testing ../cache/"
 
 [build.environment]
 #  HUGO_VERSION = "0.56.3"
