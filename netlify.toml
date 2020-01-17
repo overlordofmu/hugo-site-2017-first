@@ -2,7 +2,7 @@
 
   command = "if [ ! -d ../cache/testing  ] ; then mkdir ../cache/testing ; fi ; cp -R ../cache/testing . ; pwd ; ls -alh ; ls -alh .. ; ls -alh ../cache ; date >> testing/date.txt ;  env ; hugo ; cat ./testing/date.txt ; cp -R testing ../cache/"
 
-  ignore = "git diff --quiet HEAD^ HEAD static/"
+#  ignore = "git diff --quiet HEAD^ HEAD static/"
 
 [build.environment]
 #  HUGO_VERSION = "0.56.3"
