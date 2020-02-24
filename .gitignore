@@ -1,2 +1,5 @@
 public/
 .netlify/
+
+# Local Netlify folder
+.netlify
