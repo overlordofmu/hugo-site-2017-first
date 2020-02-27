@@ -1,6 +1,7 @@
 [build]
 
-  command = "if [ ! -d ../cache/testing  ] ; then mkdir ../cache/testing ; fi ; cp -R ../cache/testing . ; pwd ; ls -alh ; ls -alh .. ; ls -alh ../cache ; date >> testing/date.txt ;  env ; hugo ; cat ./testing/date.txt ; cp -R testing ../cache/ ; which ftp || sleep 60"
+  command = "hugo && nslookup cms.zeusjones.com ; sleep 30"
+#  command = "if [ ! -d ../cache/testing  ] ; then mkdir ../cache/testing ; fi ; cp -R ../cache/testing . ; pwd ; ls -alh ; ls -alh .. ; ls -alh ../cache ; date >> testing/date.txt ;  env ; hugo ; cat ./testing/date.txt ; cp -R testing ../cache/ ; which ftp || sleep 60"
 
 #  ignore = "git diff --quiet HEAD^ HEAD static/"
 
