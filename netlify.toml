@@ -12,5 +12,9 @@
 
   command = "ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } "
 
+[[redirects]]
+  from = "/foo"
+  to = "/bar"
+  status = 301
 
 #comments still trigger builds :)
