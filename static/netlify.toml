@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/foo"
-  to = "/bar2"
-  status = 301
-
