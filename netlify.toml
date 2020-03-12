@@ -17,4 +17,4 @@
   to = "/bar"
   status = 301
 
-#comments still trigger builds :)
+#comments still trigger builds :) - yes, they do
