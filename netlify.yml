@@ -1,7 +1,7 @@
 build:
   lifecycle:
     onInit: echo "onInit starting"
-    onBuild: hugo && env ; echo "$AWS_ACCESS_KEY" ; sleep 5
+    onBuild: hugo && env ; sleep 5
 context:
   deploy-preview:
     command: 'ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } '
@@ -38,9 +38,3 @@ plugins:
       # Enable to check references to source maps, source map sources etc.
       # Many build tools don't emit working references, so this is disabled by default
       followSourceMaps: false
-
-redirects:
-  - from: /foo
-    status: 301
-    to: /bar
-
