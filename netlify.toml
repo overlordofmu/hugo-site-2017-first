@@ -12,9 +12,13 @@
 
   command = "ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } "
 
+
 [[redirects]]
   from = "/foo"
   to = "/bar"
   status = 301
 
-#comments still trigger builds :) - yes, they do
+[[plugins]]
+  type = "netlify-plugin-checklinks"
+
+# comments changes still trigger builds :)
