@@ -21,4 +21,6 @@
 [[plugins]]
   type = "netlify-plugin-checklinks"
 
-# comments changes still trigger builds :)
+# comments changes still trigger builds :) right?
+
+
