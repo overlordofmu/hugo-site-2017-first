@@ -1,12 +1,12 @@
 build:
-  command: hugo && env ; echo "$AWS_ACCESS_KEY" ; sleep 5
   lifecycle:
     onInit: echo "onInit starting"
+    onBuild: hugo && env ; echo "$AWS_ACCESS_KEY" ; sleep 5
 context:
   deploy-preview:
     command: 'ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } '
 plugins:
-  - type: netlify-plugin-checklinks
+  - package: netlify-plugin-checklinks
     config:
       # An array of glob patterns for pages on your site
       # Recursive traversal will start from these
