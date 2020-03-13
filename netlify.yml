@@ -1,5 +1,7 @@
 build:
   command: hugo && env ; echo "$AWS_ACCESS_KEY" ; sleep 5
+  lifecycle:
+    onInit: echo "onInit starting"
 context:
   deploy-preview:
     command: 'ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } '
