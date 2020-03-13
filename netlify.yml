@@ -1,4 +1,5 @@
 build:
+  publish: public
   lifecycle:
     onInit: echo "onInit starting"
     onBuild: hugo && env ; sleep 5
