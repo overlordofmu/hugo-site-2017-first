@@ -6,3 +6,5 @@ http://www.of-mu.org/ https://of-mu.org/ 301!
 https://mufu.io/something/* https://ent9ijuk6b4io.x.pipedream.net/:splat 301
 https://mufu.io/else/ no=:no yes=:yes https://ent9ijuk6b4io.x.pipedream.net/?no=:no&yes=:yes 301
 https://mufu.io/* https://of-mu.org/:splat 301!
+# comments in a redirect
+
