@@ -2,10 +2,12 @@ build:
   publish: public
   lifecycle:
     onInit: echo "onInit starting"
-    onBuild: hugo && env ; sleep 5
+    onBuild: date ; hugo && env ; sleep 5
+  environment:
+    TZ: America/Los_Angeles
 context:
   deploy-preview:
-    command: 'ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } '
+    command: 'date ; ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } '
 plugins:
   - package: netlify-plugin-checklinks
     config:
