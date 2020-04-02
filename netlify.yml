@@ -2,7 +2,7 @@ build:
   publish: public
   lifecycle:
     onInit: echo "onInit starting"
-    onBuild: TZ='America/Los_Angeles' date ; hugo && env ; sleep 5
+    onBuild: echo $0 ; TZ='America/Los_Angeles' date ; hugo && env ; sleep 5
   environment:
     TZ: America/Los_Angeles
 context:
