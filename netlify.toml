@@ -1,24 +1,23 @@
 [build]
-publish = "public"
-
-[build.lifecycle]
-onBuild = "hugo && env &&  sleep 60 && echo hello"
-onInit = "echo \"onInit starting\""
-
-[context]
+  publish = "public"
+  command = "hugo && env &&  sleep 10 && echo hello"
+  onInit = "echo \"onInit starting\""
 
 [context.deploy-preview]
-command = "ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } "
+  command = "ls -alH ; free -h ; env ; hugo  || { sleep 120 ; false ; } "
 
 [[plugins]]
-package = "netlify-plugin-checklinks"
+  package = "netlify-plugin-checklinks"
 
-[plugins.config]
-checkExternal = false
-entryPoints = ["*.html"]
-followSourceMaps = false
-pretty = true
-recursive = true
-skipPatterns = []
-todoPatterns = []
+[[plugins]]
 
+[plugins.inputs]
+  checkExternal = false
+  entryPoints = [
+    "*.html"
+  ]
+  followSourceMaps = false
+  pretty = true
+  recursive = true
+  skipPatterns = []
+  todoPatterns = []
