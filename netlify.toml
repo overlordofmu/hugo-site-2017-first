@@ -9,15 +9,13 @@
 [[plugins]]
   package = "netlify-plugin-checklinks"
 
-[[plugins]]
-
-[plugins.inputs]
-  checkExternal = false
-  entryPoints = [
-    "*.html"
-  ]
-  followSourceMaps = false
-  pretty = true
-  recursive = true
-  skipPatterns = []
-  todoPatterns = []
+  [plugins.inputs]
+    checkExternal = false
+    entryPoints = [
+      "*.html"
+    ]
+    followSourceMaps = false
+    pretty = true
+    recursive = true
+    skipPatterns = []
+    todoPatterns = []
