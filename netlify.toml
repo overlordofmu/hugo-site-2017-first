@@ -9,4 +9,4 @@
   publish = "public" # The path to your static content folder
 
 [context.deploy-preview]
-  command = "ls -alH ; free -h ; env ; sleep 20 ; hugo  || { sleep 30 ; false ; } "
+  command = "ls -alH ; identify -version ; free -h ; env ; sleep 20 ; hugo  || { sleep 30 ; false ; } "
