@@ -8,4 +8,4 @@ command = "env ; hugo"
   command = "free -h ; env ; hugo  || { sleep 120 ; false ; } "
 
 
-#comments still trigger builds :)
+#comments for the sake of commits
