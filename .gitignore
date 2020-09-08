@@ -1,4 +1,4 @@
+node_modules/
 public/
 .netlify/
-node_modules/
 package-lock.json

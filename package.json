@@ -1,0 +1,21 @@
+{
+  "name": "build-plugins-link-checker",
+  "version": "0.1.0",
+  "description": "this is an internal package to maintain this build plugin",
+  "dependencies": {
+    "netlify-plugin-checklinks": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overlordofmu/hugo-of-mu.org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/overlordofmu/hugo-of-mu.org/issues"
+  },
+  "homepage": "https://github.com/overlordofmu/hugo-of-mu.org#readme"
+}
