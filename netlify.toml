@@ -1,4 +1,3 @@
-[build]
   publish = "public"
   command = "hugo && env &&  identify -version ; free -h  && echo hello there"
   onInit = "echo \"onInit starting\""
@@ -10,3 +9,5 @@
 
 [context.deploy-preview]
   command = "ls -alH ; identify -version ;  free -h ; env ; sleep 20 ; hugo  || { sleep 30 ; false ; } "
+
+## Comment for new commit
