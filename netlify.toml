@@ -10,7 +10,7 @@
 [context.deploy-preview]
   command = "hugo  || echo 'PR build' "
 
-[contenxt.slash-in-name-branch]
+[contenxt.slash/in/name/branch]
   command = "hugo  || echo 'slash-in-name-branch build' "
 
 ## Comment for new commit
