@@ -1,3 +1,4 @@
+[build]
   publish = "public"
   command = "hugo && env &&  identify -version ; free -h  && echo hello there"
   onInit = "echo \"onInit starting\""
