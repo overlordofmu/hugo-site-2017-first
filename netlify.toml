@@ -8,9 +8,9 @@
   publish = "public" # The path to your static content folder
 
 [context.deploy-preview]
-  command = "hugo  || echo 'PR build' "
+  command = ""
 
-[context.slash-in-name-branch]
+[context.'slash/in/name/branch']
   command = "hugo  || echo 'slash-in-name-branch build' "
 
 ## Comment for new commit
