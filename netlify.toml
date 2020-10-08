@@ -13,13 +13,13 @@
 
 
 [[headers]]
-  for = "https://www.of-mu.org/*"
+  for = "/*"
   [headers.values]
     X-Pretend = "Let's pretend this is www.of-mu.org"
 
 
 [[headers]]
-  for = "https://mufu.io/*"
+  for = "/*"
   [headers.values]
     X-Pretend = "Let's pretend this is mufu.io"
 
