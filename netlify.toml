@@ -10,3 +10,16 @@
 
 [context.deploy-preview]
   command = "ls -alH ; identify -version ;  free -h ; env ; sleep 20 ; hugo  || { sleep 30 ; false ; } "
+
+
+[[headers]]
+  for = "https://www.of-mu.org/*"
+  [headers.values]
+    X-Pretend = "Let's pretend this is www.of-mu.org"
+
+
+[[headers]]
+  for = "https://mufu.io/*"
+  [headers.values]
+    X-Pretend = "Let's pretend this is mufu.io"
+
