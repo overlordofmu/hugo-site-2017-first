@@ -1,0 +1,24 @@
+[build]
+  publish = "public"
+  command = "hugo && env &&  identify -version ; free -h  && echo hello there"
+  onInit = "echo \"onInit starting\""
+
+[dev]
+  command = "hugo serve" # Command to start your dev server
+#  port = 8888   # The port that the netlify dev will be accessible on
+  publish = "public" # The path to your static content folder
+
+[context.deploy-preview]
+  command = "ls -alH ; identify -version ;  free -h ; env ; sleep 20 ; hugo  || { sleep 30 ; false ; } "
+
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Pretend = "Let's pretend this is www.of-mu.org"
+
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Pretend = "Let's pretend this is mufu.io"
