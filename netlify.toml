@@ -2,6 +2,7 @@
   publish = "public"
   command = "hugo && env &&  identify -version ; free -h  && echo hello there"
   onInit = "echo \"onInit starting\""
+  functions = "functions"
 
 [dev]
   command = "hugo serve" # Command to start your dev server
@@ -28,4 +29,3 @@
   to = "https://2ad358630a285c3e77fe1405e0d92e9f.m.pipedream.net/:splat"
   status = 200
   headers = {Origin = "www.sunweb.nl"}
-  
