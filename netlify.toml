@@ -3,7 +3,7 @@
   command = "hugo && env &&  identify -version ; free -h  && echo hello there"
   onInit = "echo \"onInit starting\""
   functions = "functions"
-  ignore = "test -z \"${INCOMING_HOOK_URL}\""
+  ignore = "test -n \"${INCOMING_HOOK_URL}\""
 
 [dev]
   command = "hugo serve" # Command to start your dev server
