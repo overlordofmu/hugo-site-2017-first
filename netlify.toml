@@ -1,9 +1,16 @@
 [build]
   publish = "public"
-  command = "hugo && env &&  identify -version ; free -h  && echo hello there"
+  command = "env && export && free -h  && echo hello there && hugo"
   onInit = "echo \"onInit starting\""
   functions = "functions"
   ignore = "test -n \"${INCOMING_HOOK_URL}\""
+
+[build.environment]
+  MADE_UP_VARIABLE_1 = "foo"
+  MADE_UP_VARIABLE_2 = "bar"
+
+[context.new-branch.environment]
+  MADE_UP_VARIABLE_3 = "welp"
 
 [dev]
   command = "hugo serve" # Command to start your dev server
