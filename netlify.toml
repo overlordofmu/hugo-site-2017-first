@@ -34,6 +34,6 @@
 
 [[redirects]]
   from = "/proxy/*"
-  to = "https://2ad358630a285c3e77fe1405e0d92e9f.m.pipedream.net/:splat"
+  to = "https://enm3gl0izemm78z.m.pipedream.net/:splat"
   status = 200
-  headers = {Origin = "www.sunweb.nl"}
+  headers = {Origin = "www.testing.netlify.app"}
