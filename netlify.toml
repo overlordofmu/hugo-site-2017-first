@@ -14,7 +14,7 @@
 
 [dev]
   command = "hugo serve" # Command to start your dev server
-#  port = 8888   # The port that the netlify dev will be accessible on
+#  port = 8888   # The port that the netlify dev will use
   publish = "public" # The path to your static content folder
 
 [context.deploy-preview]
